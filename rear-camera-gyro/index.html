@@ -8,7 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 </head>
 <body>
-  <video id="video" autoplay playsinline></video>
-  <script src="index.js"></script>
+<!--  <video id="video" autoplay playsinline></video>-->
+<!--  <script src="index.js"></script>-->
+<div id="ex_orientation"></div>
+<script>
+window.addEventListener('deviceorientation', function(e){
+	var output = "<b>absolute</b><br />" + e.absolute + "<br /><br />"
+	+ "<b>alpha（z軸）GPS有りは北が0、なしは最初の位置が0</b><br />" + e.alpha + "<br /><br />"
+	+ "<b>beta（x軸）前後の傾き</b><br />" + e.beta + "<br /><br />"
+	+ "<b>gamma（y軸）左右の傾き</b><br />" + e.gamma;
+
+	document.getElementById('ex_orientation').innerHTML = output;
+}, false);
+</script>
 </body>
 </html>
