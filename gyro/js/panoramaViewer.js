@@ -109,12 +109,8 @@
           var beta     = event.beta;
           var gamma    = event.gamma;
 
-          output.innerHTML  = "alpha : " + alpha + "\n";
-          output.innerHTML += "beta : " + beta + "\n";
-          output.innerHTML += "gamma: " + gamma + "\n";
-
-          // 新たな方向データに基づいて処理を行う
-          window.addEventListener("deviceorientation", handleOrientation, true);
+          var demo2 = document.getElementById("samurai");
+          demo2.innerHTML = alpha + " " + beta + " " + gamma ;
 
         }
 
