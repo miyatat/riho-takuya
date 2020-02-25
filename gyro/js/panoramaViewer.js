@@ -51,7 +51,9 @@
 
 		//PCなど非ジャイロ
 		if(!isGyro){
-			setCanvas();
+            window.addEventListener("deviceorientation", handleOrientation, true);
+
+//			setCanvas();
 
 		//一応ジャイロ持ちデバイス
 		}else{
@@ -63,11 +65,13 @@
 				window.removeEventListener("deviceorientation",doGyro,false);
 			}
 
+
 			//数秒後に判定
 			setTimeout(function(){
 				//ジャイロが動いた
 				if(resGyro){
-					setCanvas();
+//					setCanvas();
+                    window.addEventListener("deviceorientation", handleOrientation, true);
 
 				//ジャイロ持ってるくせに動かなかった
 				}else{
@@ -99,6 +103,24 @@
 			},300);
 		}
 
+        function handleOrientation(event) {
+          var absolute = event.absolute;
+          var alpha    = event.alpha;
+          var beta     = event.beta;
+          var gamma    = event.gamma;
+
+          document.write(absolute)
+          document.write(" ")
+          document.write(alpha)
+          document.write(" ")
+          document.write(beta)
+          document.write(" ")
+          document.write(gamma)
+          document.write(" ")
+
+          // 新たな方向データに基づいて処理を行う
+
+        }
 
 		///////////////////////////////////////////////////////////////////////////////////////////
 		// Canvas
