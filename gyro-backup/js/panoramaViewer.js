@@ -84,11 +84,14 @@
 							DeviceOrientationEvent.requestPermission().then(res => {
 								//「動作と方向」が許可された
 								if(res==="granted"){
-									setCanvas();
+//									setCanvas();
+            	                    window.addEventListener("deviceorientation", handleOrientation, true);
+
 								//「動作と方向」が許可されなかった
 								}else{
 									isGyro=false;
-									setCanvas();
+     			                    window.addEventListener("deviceorientation", handleOrientation, true);
+//	            					setCanvas();
 								}
 							});
 						});
@@ -97,7 +100,9 @@
 					}else{
 						//早くアップデートしてもらうのを祈りながら諦める
 						isGyro=false;
-						setCanvas();
+                        window.addEventListener("deviceorientation", handleOrientation, true);
+
+//						setCanvas();
 					}
 				}
 			},300);
