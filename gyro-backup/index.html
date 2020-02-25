@@ -14,8 +14,13 @@
 body {
 	margin:0px;
 	padding:0px;
+    background: #ffffff;
 }
 
+#video {
+  display: block;
+  width: 100%;
+}
 
 /***************************
  * canvas
@@ -144,7 +149,8 @@ jQuery(function(){
 </head>
 <body>
 <p id="samurai">Waiting2...</p>
-
+  <video id="video" autoplay playsinline></video>
+  <script src="index.js"></script>
 <!--<div class="canvas_wrap">-->
 <!--  <div class="canvas_box">-->
 <!--    <canvas id="canvas_main"></canvas>-->

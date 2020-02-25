@@ -51,9 +51,7 @@
 
 		//PCなど非ジャイロ
 		if(!isGyro){
-            window.addEventListener("deviceorientation", handleOrientation, true);
-
-//			setCanvas();
+			setCanvas();
 
 		//一応ジャイロ持ちデバイス
 		}else{
@@ -64,7 +62,6 @@
 				resGyro=true;
 				window.removeEventListener("deviceorientation",doGyro,false);
 			}
-
 
 			//数秒後に判定
 			setTimeout(function(){
@@ -84,11 +81,14 @@
 							DeviceOrientationEvent.requestPermission().then(res => {
 								//「動作と方向」が許可された
 								if(res==="granted"){
-									setCanvas();
+//									setCanvas();
+            	                    window.addEventListener("deviceorientation", handleOrientation, true);
+
 								//「動作と方向」が許可されなかった
 								}else{
 									isGyro=false;
-									setCanvas();
+//     			                    window.addEventListener("deviceorientation", handleOrientation, true);
+	            					setCanvas();
 								}
 							});
 						});
@@ -97,6 +97,7 @@
 					}else{
 						//早くアップデートしてもらうのを祈りながら諦める
 						isGyro=false;
+//                        window.addEventListener("deviceorientation", handleOrientation, true);
 						setCanvas();
 					}
 				}

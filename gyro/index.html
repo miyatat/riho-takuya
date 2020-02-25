@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<title>jyro camera app</title>
+<title>vrmvViewer</title>
 
 <!-- css -->
 <style>
@@ -10,15 +10,12 @@
 /***************************
  * body
  ***************************/
+
 body {
-  margin: 0;
-  background: #ffffff;
+	margin:0px;
+	padding:0px;
 }
 
-#video {
-  display: block;
-  width: 100%;
-}
 
 /***************************
  * canvas
@@ -133,10 +130,6 @@ body {
 <script src="js/three/Detector.js"></script>
 
 <script src="js/panoramaViewer.js"></script>
-
-
-</head>
-<body>
 <script>
 jQuery(function(){
 	$(window).on("load",function(){
@@ -147,18 +140,19 @@ jQuery(function(){
 	});
 });
 </script>
-<p id="samurai">waiting2...</p>
-<video id="video" autoplay playsinline></video>
-  <script src="index.js"></script>
+
+</head>
+<body>
+<p id="samurai">Waiting2...</p>
 
 <!--<div class="canvas_wrap">-->
 <!--  <div class="canvas_box">-->
 <!--    <canvas id="canvas_main"></canvas>-->
-<!---->
+
 <!--    <div class="canvas_start">-->
 <!--      <div class="inner"><p>TOUCH START!!</p></div>-->
 <!--    </div>-->
-<!---->
+
 <!--    <div class="canvas_loader">-->
 <!--      <div class="inner"><p>Loading ...</p></div>-->
 <!--    </div>-->
