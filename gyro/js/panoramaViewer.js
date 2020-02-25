@@ -109,16 +109,12 @@
           var beta     = event.beta;
           var gamma    = event.gamma;
 
-          document.write(absolute);
-          document.write(" ");
-          document.write(alpha);
-          document.write(" ");
-          document.write(beta);
-          document.write(" ");
-          document.write(gamma);
-          document.write(" ");
-          handleOrientation(event);
+          output.innerHTML  = "alpha : " + alpha + "\n";
+          output.innerHTML += "beta : " + beta + "\n";
+          output.innerHTML += "gamma: " + gamma + "\n";
+
           // 新たな方向データに基づいて処理を行う
+          window.addEventListener("deviceorientation", handleOrientation, true);
 
         }
 
