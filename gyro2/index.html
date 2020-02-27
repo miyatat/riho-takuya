@@ -66,6 +66,18 @@ body {
 	display:none;
 }
 
+.canvas_start .apps {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	display:table;
+	width:100%;
+	height:10vh;
+}
+
 .canvas_start .inner {
 	position:absolute;
 	top:0;
@@ -75,7 +87,7 @@ body {
 	margin:auto;
 	display:table;
 	width:100%;
-	height:100vh;
+	height:90vh;
 }
 
 .canvas_start .inner p {
@@ -150,7 +162,9 @@ jQuery(function(){
     <canvas id="canvas_main"></canvas>
 
     <div class="canvas_start">
+      <div class="apps"><a href="./apps/">APPS</a></div>
       <div class="inner"><p>TOUCH START!!</p></div>
+
     </div>
 
     <div class="canvas_loader">
