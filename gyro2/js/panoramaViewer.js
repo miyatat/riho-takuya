@@ -18,6 +18,7 @@
 			this._box		=myCanvas.closest(".canvas_box");
 			this._loader	=myCanvas.closest(".canvas_box").find(".canvas_loader");
 			this._start		=myCanvas.closest(".canvas_box").find(".canvas_start");
+			this._apps		=myCanvas.closest(".canvas_box").find(".canvas_apps");
 
 			this._w			=this._box.width();
 			this._h			=this._box.height();
@@ -223,8 +224,9 @@
 				}else{
 					clearTimeout(timerLoading);
 					cv._loader.hide();
+					cv._apps.show();
 
-					runAnimate();
+//					runAnimate();
 				}
 			}
 
