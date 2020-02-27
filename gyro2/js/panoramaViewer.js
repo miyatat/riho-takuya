@@ -67,8 +67,8 @@
 			setTimeout(function(){
 				//ジャイロが動いた
 				if(resGyro){
-//					setCanvas();
-                    window.addEventListener("deviceorientation", handleOrientation, true);
+					setCanvas();
+//                    window.addEventListener("deviceorientation", handleOrientation, true);
 
 				//ジャイロ持ってるくせに動かなかった
 				}else{
@@ -81,8 +81,8 @@
 							DeviceOrientationEvent.requestPermission().then(res => {
 								//「動作と方向」が許可された
 								if(res==="granted"){
-//									setCanvas();
-            	                    window.addEventListener("deviceorientation", handleOrientation, true);
+									setCanvas();
+//            	                    window.addEventListener("deviceorientation", handleOrientation, true);
 
 								//「動作と方向」が許可されなかった
 								}else{
