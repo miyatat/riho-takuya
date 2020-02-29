@@ -3,7 +3,8 @@ const medias = {
   video: {
     facingMode: {
       exact: "environment"
-    }
+    },
+    iso: 30
   }
 };
 const video = document.getElementById("video");
