@@ -113,9 +113,9 @@
           var gyro_x = document.getElementById("samurai_x");
           var gyro_y = document.getElementById("samurai_y");
           var gyro_z = document.getElementById("samurai_z");
-          gyro_x.innerHTML = alpha;
-          gyro_y.innerHTML = beta;
-          gyro_z.innerHTML = gamma;
+          gyro_x.innerHTML = '  ' + alpha;
+          gyro_y.innerHTML = '  ' + beta;
+          gyro_z.innerHTML = '  ' + gamma;
 
         }
 
