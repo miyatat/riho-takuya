@@ -43,13 +43,6 @@ body{
 	z-index:10000;
 }
 
-#specialCountdown{
-	z-index:2;
-	margin:0 auto;
-	display:table;
-	position:relative;
-}
-
 #defaultCountdown{
 	z-index:2;
 	margin:0 auto;
