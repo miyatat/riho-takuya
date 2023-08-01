@@ -1,6 +1,6 @@
 const year = 2023;
 const fourthOfJuly = new Date(year, 7, 23).getTime();
-const fourthOfJulyNextYear = new Date(year + 1, 7, 23   ).getTime();
+//const fourthOfJulyNextYear = new Date(year + 1, 7, 23   ).getTime();
 const month = new Date().getMonth();
 
 // countdown
@@ -10,15 +10,15 @@ let timer = setInterval(function() {
   const today = new Date().getTime();
 
   // get the difference
-  let diff;
-  if(month > 6) {
-    diff = fourthOfJulyNextYear - today;
-  } else {
-    diff = fourthOfJuly - today;
-  }
+//  let diff;
+//  if(month > 6) {
+//    diff = fourthOfJulyNextYear - today;
+//  } else {
+//    diff = fourthOfJuly - today;
+//  }
 
 
-
+  let diff = fourthOfJuly - today;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
