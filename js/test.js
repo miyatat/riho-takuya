@@ -1,5 +1,5 @@
-const year = 2023;
-const fourthOfJuly = new Date(year, 7, 23).getTime();
+const year = 2025;
+const fourthOfJuly = new Date(year, 5, 18).getTime();
 //const fourthOfJulyNextYear = new Date(year + 1, 7, 23   ).getTime();
 const month = new Date().getMonth();
 
@@ -18,7 +18,7 @@ let timer = setInterval(function() {
 //  }
 
 
-  let diff = fourthOfJuly - today;
+  let diff = fourthOfJuly - today + 1000 * 60 * 60 * 10;
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
