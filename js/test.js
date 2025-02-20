@@ -1,5 +1,6 @@
 const year = 2025;
-const fourthOfJuly = new Date(year, 2, 21).getTime();
+// 月が＋１されるから5月の場合は４
+const fourthOfJuly = new Date(year, 4, 18).getTime();
 //const fourthOfJulyNextYear = new Date(year + 1, 7, 23   ).getTime();
 const month = new Date().getMonth();
 
